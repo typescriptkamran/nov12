@@ -13,16 +13,16 @@ const Hero = () => {
             
           ></Image>
   </div>
-  <div className="col-start-3 transition delay-150 duration-300 ease-in-out ">
+  <div className="col-start-3 transform rotate-6 ">
   <Image
             src="/linkdin.jpg"
             width={1000}
-            height={500}
+            height={300}
             alt={"github"}
             
           ></Image>
   </div>
-  <div className="scale-150  rotate-6 transform animate-pulse duration-1000 delay-500 animate-3">
+  <div className="scale-150  rotate-6 transform animate-pulse duration-1000 delay-500 animate-3 hover:transition-opacity-200">
   <Image
             src="/kamran.jpg"
             width={300}
@@ -31,8 +31,8 @@ const Hero = () => {
             
           ></Image>
   </div>
-  <div className="animate-pulse duration-1000 delay-500 animate-3">
-  <Image
+  <div className="border mx-auto">
+  <Image className='border rounded-full mx-auto shadow-lg shadow-yellow-300'
             src="/logopic.jpg"
             width={300}
             height={300}

@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         <div>
-          <div className = "mb-10 w-full bg-gradient-to-r from-gray-50 to-blue-300 text-blue-600 p-10 border-4 justify-center">
+          <div className="mb-10 w-full bg-gradient-to-r from-gray-50 to-blue-300 text-blue-600 p-10 border-4 justify-center">
             <div className="mb-10">
               <button className="p-10 mx-10 shadow-sm bg-white">One</button>
               <button className="p-10 mx-10 shadow-sm bg-white">Two</button>
@@ -98,7 +98,64 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
+        <div>
+          <div>
+            <div className="">
+              <button className="p-10 border border-black">One</button>
+              <button className="m-10 border border-black">Two</button>
+              <button className="m-2 p-2 border-4 border-black">Three</button>
+            </div>
+            <div>
+              <button className="m-4 p-4 border-2 border-black rounded-md">
+                Four
+              </button>
+              <button className="m-4 p-4 border-2 border-black rounded-2xl">
+                Five
+              </button>
+              <button className="m-4 p-4 border-2 border-black rounded-full">
+                report erratum • discuss Borders • 31 Six
+              </button>
+            </div>
+          </div>
+          <div>
+            <div className="mb-10 bg-slate-300">
+              <button className="p-10 border border-black">One</button>
+              <button className="m-10 border border-black">Two</button>
+              <button className="m-2 p-2 border-4 border-black">Three</button>
+            </div>
+            <div>
+              <button className="m-4 p-4 border-2 border-black rounded-md">
+                Four
+              </button>
+              <button className="m-4 p-4 border-2 border-black rounded-2xl">
+                Five
+              </button>
+              <button className="m-4 p-4 border-2 border-black rounded-full">
+                report erratum • discuss Borders • 31 Six
+              </button>
+              <div>
+              <div className="antialiased text-gray-900 px-6">
+                  <div className="max-w-xl mx-auto py-12 divide-y md:max-w-4xl">
+                    <div className="w-full bg-slate-400 ">
+                      <h1 className="text-4xl font-bold bg-slate-200">@tailwindcss/forms examples</h1>
+                      <p className="mt-2 text-lg text-gray-600">
+                        An opinionated form reset designed to make form elements easy to style with utility
+                        classes.
+                      </p>
+                      <div className="mt-4 flex space-x-4">
+                        <a className="text-lg underline" href="https://github.com/tailwindlabs/tailwindcss-forms"
+                          >Documentation</a
+                        >
+                        <a className="text-lg underline" href="/kitchen-sink.html">Kitchen Sink</a>
+                      </div>
+                    </div>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
