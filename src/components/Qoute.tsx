@@ -14,12 +14,7 @@ const Qoute = () => {
     <div className="pt-6 md:p-8 text-center md:text-center space-y-4">
       <blockquote>
         <p className="text-lg font-medium">
-          "Tailwind CSS isn't just a framework; it's a design ecosystem
-          that effortlessly scales with large teams. Its unparalleled
-          adaptability, effortless customization, and minuscule build size
-          make it the cornerstone of seamless and expansive design
-          endeavors."
-        </p>
+         Helo this is quatations        </p>
       </blockquote>
       <figcaption className="font-medium">
         <div className="text-sky-500 dark:text-sky-400">
