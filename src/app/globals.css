@@ -37,3 +37,7 @@ body {
 .btn--secondary {
   @apply bg-slate-100 text-slate-900;
 }
+
+::selection {
+  color: rgb(255, 115, 0);
+}

@@ -42,12 +42,15 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
             <li>
               <Link href="/react/ticktoc">TickToc</Link>
             </li>
+            <li>
+              <Link href="/react/to-do-app">To Do App</Link>
+            </li>
           </ul>
         </div>
 
         {/* Desktop menu */}
         <div className="flex md:w-1/6 py-5 px-5 text-left bg-slate-300 hidden md:flex">
-          <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+          <ul className="flex flex-col md:flex-col space-y-2 md:space-y-0 md:space-x-4">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -56,6 +59,9 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
             </li>
             <li>
               <Link href="/react/ticktoc">TickToc</Link>
+            </li>
+            <li>
+              <Link href="/react/to-do-app">To Do App</Link>
             </li>
           </ul>
         </div>
