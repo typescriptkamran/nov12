@@ -1,20 +1,67 @@
-import Link from "next/link"
-export default function ReactLayout({
-    children,
-  }: {
-    children: React.ReactNode
-  }) {
-    return (
-     <section>
-        <div className="flex flex-row h-full py-5 px-2  text-white">
-            <div className="flex w-1/6 py-5 px-5 text-left bg-slate-300">
-                <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/react">React</Link></li>
-                    <li><Link href="/react/ticktoc">TickToc</Link></li>
-                </ul>
-            </div>
-        {children}
+"use client";
+import { useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi'; // Assuming you want to use Feather icons
+
+import Link from 'next/link';
+
+export default function ReactLayout({ children }: { children: React.ReactNode }) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <section>
+      <div className="flex flex-col md:flex-row h-full py-5 px-2 text-white">
+        {/* Toggle button */}
+        <button className="md:hidden block text-white" onClick={toggleMenu}>
+          {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+
+        {/* Slide-in menu */}
+        <div
+          className={`md:hidden fixed top-0 left-0 w-3/4 h-full bg-slate-300 transition-transform transform ${
+            menuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
+        >
+          <button
+            className="text-white absolute top-5 right-5"
+            onClick={toggleMenu}
+          >
+            <FiX size={24} />
+          </button>
+
+          <ul className="flex flex-col py-5 px-5 space-y-2">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/react">React</Link>
+            </li>
+            <li>
+              <Link href="/react/ticktoc">TickToc</Link>
+            </li>
+          </ul>
         </div>
-    </section>)
-  }
+
+        {/* Desktop menu */}
+        <div className="flex md:w-1/6 py-5 px-5 text-left bg-slate-300 hidden md:flex">
+          <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4">
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/react">React</Link>
+            </li>
+            <li>
+              <Link href="/react/ticktoc">TickToc</Link>
+            </li>
+          </ul>
+        </div>
+
+        {children}
+      </div>
+    </section>
+  );
+}
