@@ -1,7 +1,5 @@
 import React from 'react';
 import { MdMoreTime } from 'react-icons/md';
-import { MdAccessTime } from "react-icons/md";
-
 
 const Card = () => {
   return (
@@ -14,9 +12,6 @@ const Card = () => {
         <p className="py-2 px-2 mt-16">
           Lorem ipsum dolor sit amet consectetur adipisicing.
         </p>
-        <div className='flex gap-2 items-center'>
-            <MdAccessTime /> time
-        </div>
         <div className="absolute bottom-0 left-0 bg-zinc-600 w-full h-20 rounded-b-[50px] flex items-center justify-center">
           <div className="flex flex-col gap-4">
             <button className="btn btn--primary">task completed</button>
