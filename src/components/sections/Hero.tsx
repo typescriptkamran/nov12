@@ -31,8 +31,8 @@ const Hero = () => {
             
           ></Image>
   </div>
-  <div className="border mx-auto">
-  <Image className='border rounded-full mx-auto shadow-lg shadow-yellow-300'
+  <div>
+  <Image className='rounded-full mx-auto shadow-lg shadow-yellow-300'
             src="/logopic.jpg"
             width={300}
             height={300}

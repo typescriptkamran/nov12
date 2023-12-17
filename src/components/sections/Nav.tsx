@@ -5,24 +5,24 @@ import React from "react";
 const Nav = () => {
   return (
     <div>
-      {" "}
-      <header className="flex flex-row h-full gap-5 py-5 px-2 bg-slate-300 text-white">
+      
+      <header className="flex flex-row gap-5 py-5 px-2 bg-slate-300 text-white">
         <Link href="\">
-          <Image
-            src="\next.svg"
-            width={50}
-            height={50}
+          <Image 
+            src="/logopic.jpg"
+            width={40}
+            height={40}
             alt={"logo"}
-            className="flex"
+            className="flex rounded-full bg-slate-100"
           ></Image>
         </Link>
         <Link
           href="\"
-          className="flex shadow-blue-500/50 shadow-md shad text-slate-200 drop-shadow-lg font-bold "
+          className="flex shadow-blue-500/50 shadow-md shad text-slate-200 drop-shadow-lg font-bold text-center p-2"
         >
           Muhammad Kamran
         </Link>
-        <nav className="flex flex-row text-center">
+        <nav className="flex flex-row text-center py-3 px3">
           <ul className="flex gap-5 text-center">
             <li>
               <Link href="\about" className = "font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">About</Link>
