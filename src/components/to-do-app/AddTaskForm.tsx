@@ -28,37 +28,37 @@ const AddTaskForm: React.FC<AddTaskFormProps> = ({ onAddTask }) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className="my-4">
-      <label className="block text-gray-700 text-sm font-bold mb-2">
+    <form onSubmit={handleSubmit} className="my-4 mx-4">
+      <label className="block text-slate-300 text-sm font-bold mb-2">
         Title:
         <input
           type="text"
           name="title"
           value={newTask.title}
           onChange={handleInputChange}
-          className="w-full border p-2 mt-1"
+          className="w-full bg-slate-400 text-slate-300 border p-2 mt-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </label>
       <br />
-      <label className="block text-gray-700 text-sm font-bold mb-2">
+      <label className="block text-slate-300 text-sm font-bold mb-2">
         Description:
         <input
           type="text"
           name="description"
           value={newTask.description}
           onChange={handleInputChange}
-          className="w-full border p-2 mt-1"
+          className="w-full bg-slate-400 text-slate-300 border p-2 mt-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </label>
       <br />
-      <label className="block text-gray-700 text-sm font-bold mb-2">
+      <label className="block text-slate-300 text-sm font-bold mb-2">
         TAT:
         <input
           type="text"
           name="time"
           value={newTask.time}
           onChange={handleInputChange}
-          className="w-full border p-2 mt-1"
+          className="w-full bg-slate-400 text-slate-300 border p-2 mt-1 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </label>
       <br />
