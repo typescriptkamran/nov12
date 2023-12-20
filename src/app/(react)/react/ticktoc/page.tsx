@@ -9,7 +9,7 @@ import { createRoot } from 'react-dom/client'
 const page = () => {
   
   return (
-    <div className="h-screen w-screen flex items-center justify-center">
+    <div className="h-screen w-full flex items-center justify-center">
       <Board/>
        
     </div>
