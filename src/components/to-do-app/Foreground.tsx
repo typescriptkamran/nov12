@@ -1,18 +1,12 @@
 // Import necessary modules and components
+"use client"
 
 import React, { useState, useEffect } from "react";
 import data from "@/api/saveData";
 import Card from "./Card";
 import { useRef } from "react";
 import AddNewTask from "./AddNewTask";
-
-// Define the Task type
-interface Task {
-  // Define the structure of your task object
-  // Adjust the properties based on your actual task structure
-  id: number;
-  // ... other properties
-}
+import { Task } from "@/api/saveData";
 
 // Define the Foreground component
 const Foreground: React.FC = () => {
@@ -39,13 +33,13 @@ const Foreground: React.FC = () => {
     <div>
       <div
         ref={ref}
-        className="flex-col gap-5 absolute top-0 left-0 bg-zinc-800/50 z-[3] h-screen w-screen p-5"
+        className="flex flex-col gap-5 absolute top-0 left-0 bg-zinc-800/50 z-[3] h-full w-fu"
       >
         <div>
           <AddNewTask onAddTask={handleAddTask} />
         </div>
         <div>
-          <div className="flex gap-5">{tasks}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">{tasks}</div>
         </div>
       </div>
     </div>

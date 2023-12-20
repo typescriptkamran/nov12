@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { FiMenu, FiX } from 'react-icons/fi'; // Assuming you want to use Feather icons
-
+import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next/link';
 
 export default function ReactLayout({ children }: { children: React.ReactNode }) {
@@ -66,7 +65,10 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
           </ul>
         </div>
 
-        {children}
+        {/* Responsive content area for children pages */}
+        <div className="flex-grow px-5 py-5">
+          {children}
+        </div>
       </div>
     </section>
   );
