@@ -20,6 +20,11 @@ const react = () => {
   return (
     <div className='flex flex-col h-screen w-full  items-center justify-center'>
 
+      <div className='m-5 py-4'>
+        <a href="https://www.freecodecamp.org/news/how-to-use-localstorage-with-react-hooks-to-set-and-get-items/"> code </a>
+      
+      </div>
+
      
     <div>
       <FCC/>
