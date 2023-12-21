@@ -11,6 +11,7 @@ const react = () => {
    const [items, setItems] = useState([])
 
    useEffect(() => {
+    localStorage.setItem('items', JSON.stringify(items))
 
     console.log(items)
 
