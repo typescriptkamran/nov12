@@ -21,7 +21,7 @@ const Card = ({data, referance}:any) => {
         <div className={`absolute bottom-0 left-0 ${data.completed ? 'bg-slate-600' : 'bg-red-300'} w-full h-20 flex items-center justify-center`}>
           <div className="flex flex-col gap-4">
             {data.completed ? <button className="btn btn--primary">Delete Task</button> :
-            <button className="btn btn--secondary">Task Completed</button>}
+            <button  className="btn btn--secondary">Task Completed</button>}
           </div>
         </div>
       </div>

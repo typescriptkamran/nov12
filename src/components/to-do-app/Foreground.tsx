@@ -19,6 +19,10 @@ const Foreground: React.FC = () => {
   const [tasks, setTasks] = useState<JSX.Element[]>(
     initialTasks.map((item: Task) => <Card key={item.id} data={item} referance={ref} />)
   );
+  
+  const handleDeleteTask = (taskId: number) => {
+    setTasks((prevTasks) => prevTasks.filter((t) => t.id !== taskId));
+  };
 
   useEffect(() => {
     // Save tasks to local storage whenever tasks state changes
