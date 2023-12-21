@@ -8,6 +8,8 @@ import { createRoot } from 'react-dom/client'
 
 const page = () => {
   
+  console.log(localStorage)
+
   return (
     <div className="h-screen w-full flex items-center justify-center">
       <Board/>

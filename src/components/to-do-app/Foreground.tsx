@@ -10,7 +10,7 @@ import { Task } from "@/api/saveData";
 
 // Define the Foreground component
 const Foreground: React.FC = () => {
-  const ref = useRef<HTMLDivElement | null>(null);
+  const ref = useRef<HTMLDivElement | !null>(null);
 
   // Load tasks from local storage or use default data
   const initialTasks: Task[] = JSON.parse(localStorage.getItem("tasks")) || data;

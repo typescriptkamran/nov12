@@ -1,3 +1,4 @@
+"use client";
 import { useState, useRef } from 'react';
 
 const Input = ({ items, setItems}) => {
@@ -22,12 +23,12 @@ const Input = ({ items, setItems}) => {
             placeholder='item'
             ref={inputRef}
             />
-            <button>add item</button>
+            <button className='btn btn--primary ml-5 '>add item</button>
         </form>
         <div className="item-list-container">
             {items.length > 0 && items.map((item)=> (
                 <div className="item" key={item}>{item}
-                    <button onClick={(evt) => {handleDelete(item)}}>X</button>
+                    <button onClick={(evt) => {handleDelete(item)}} className='p-3 bg-slate-400 m-5'>X</button>
                 </div>
             ))}
         </div>
