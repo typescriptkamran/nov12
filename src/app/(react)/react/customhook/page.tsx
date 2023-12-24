@@ -3,10 +3,11 @@ import { useLocalStorage } from '@/components/utilis/useLocalStorage'
 import React from 'react'
 import { useState } from 'react'
 
+
 const page = () => {
     let [Value, setValue] = useState('')
  
-    const [setItem] = useLocalStorage('value')
+    const [setItem, getItem] = useLocalStorage('value')
 
 
 
@@ -20,7 +21,7 @@ const page = () => {
             className="bg-slate-300 p-3 w-96 rounded-md" /> 
             <div className='flex flex-row gap-4 m-5'>
                 <button className='btn btn--primary  ' onClick={() => setItem(Value)}>Set</button>
-                <button className='btn  btn--primary'>Get</button>
+                <button className='btn  btn--primary' onClick={() => console.log(getItem())} >Get</button>
                 <button className='btn  btn--primary'>Remove</button>
                 
 
