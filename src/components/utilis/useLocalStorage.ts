@@ -24,7 +24,7 @@ export const useLocalStorage = (key: string) => {
                        
         }
 
-        const removeItem = (key: unknown) => {
+        const removeItem = (key: string) => {
             try {
                 const item = window.localStorage.removeItem(key)
                 console.log(item)

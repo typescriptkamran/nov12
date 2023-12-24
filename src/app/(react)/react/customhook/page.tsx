@@ -21,7 +21,7 @@ const page = () => {
             className="bg-slate-300 p-3 w-96 rounded-md" /> 
             <div className='flex flex-row gap-4 m-5'>
                 <button className='btn btn--primary  ' onClick={() => setItem(Value)}>Set</button>
-                <button className='btn  btn--primary' onClick={() => console.log(getItem())} >Get</button>
+                <button className='btn  btn--primary' onClick={() => console.log(getItem(key))} >Get</button>
                 <button className='btn  btn--primary' onClick={removeItem}>Remove</button>
                 
 
