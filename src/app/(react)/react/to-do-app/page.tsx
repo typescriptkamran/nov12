@@ -3,7 +3,7 @@ import Background from '@/components/to-do-app/Background'
 import Foreground from '@/components/to-do-app/Foreground'
 import React from 'react'
 
-const page = () => {
+const ToDO = () => {
   return (
     <div className='relative w-full h-screen bg-zinc-800'>
       <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
@@ -18,4 +18,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ToDO

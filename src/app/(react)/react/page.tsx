@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 import FCC from '@/components/react/FCC'
 import Input from '@/components/react/Input'
 
-const react = () => {
+const Page = () => {
   
    const [items, setItems] = useState([])
 
@@ -58,4 +58,4 @@ const react = () => {
   )
 }
 
-export default react
+export default Page

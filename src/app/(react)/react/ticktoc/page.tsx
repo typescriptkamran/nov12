@@ -1,5 +1,5 @@
 import Board from '@/components/react/Board'
-import Square from '@/components/react/Boxex'
+
 import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -8,7 +8,6 @@ import { createRoot } from 'react-dom/client'
 
 const page = () => {
   
-  console.log(localStorage)
 
   return (
     <div className="h-screen w-full flex items-center justify-center">

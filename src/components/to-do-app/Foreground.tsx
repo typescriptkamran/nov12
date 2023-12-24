@@ -7,27 +7,33 @@ import Card from "./Card";
 import { useRef } from "react";
 import AddNewTask from "./AddNewTask";
 import { Task } from "@/api/saveData";
+import { storage } from "./utilis/localstorage";
 
 // Define the Foreground component
 const Foreground: React.FC = () => {
-  const ref = useRef<HTMLDivElement | !null>(null);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const localStorage = storage();
+  let initialTasks: Task[];
 
-  // Load tasks from local storage or use default data
-  const initialTasks: Task[] = JSON.parse(localStorage.getItem("tasks")) || data;
+
+  let tasksData = localStorage?.getItem("tasks");
+  if (!tasksData) {
+    initialTasks = data;
+  }
+  let parsedData = JSON.parse(tasksData || "[]");
+  initialTasks = parsedData
 
   // Use React.FC to define the component's prop types
   const [tasks, setTasks] = useState<JSX.Element[]>(
     initialTasks.map((item: Task) => <Card key={item.id} data={item} referance={ref} />)
   );
   
-  const handleDeleteTask = (taskId: number) => {
-    setTasks((prevTasks) => prevTasks.filter((t) => t.id !== taskId));
-  };
+
 
   useEffect(() => {
     // Save tasks to local storage whenever tasks state changes
-    localStorage.setItem("tasks", JSON.stringify(tasks.map((task) => task.props.data)));
-  }, [tasks]);
+    localStorage?.setItem("tasks", JSON.stringify(tasks.map((task) => task.props.data)));
+  }, [tasks, localStorage]);
 
   const handleAddTask = (task: Task) => {
     setTasks((prevTasks) => [...prevTasks, <Card key={task.id} data={task} referance={ref} />]);
