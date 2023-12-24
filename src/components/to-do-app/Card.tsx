@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const Card = ({data, referance}:any) => {
   return (
-    <motion.div drag dragConstraints={referance}>
+    <motion.div drag dragConstraints={referance} whileDrag={{ scale: 1.2 }}>
       <div className="relative w-60 h-72 rounded-[45px] bg-zinc-900/90 p-5 m-5 overflow-hidden">
         <div className={`absolute left-0 top-0 text-xl font-bold ${data.completed ? 'bg-slate-300' : 'bg-zinc-300'} bg-slate-400 h-15 w-full flex gap-2 py-5 px-5 justify-center`}>
           <MdMoreTime />

@@ -62,6 +62,9 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
             <li>
               <Link href="/react/to-do-app">To Do App</Link>
             </li>
+            <li>
+              <Link href="/react/customhook">Custom hook</Link>
+            </li>
           </ul>
         </div>
 
