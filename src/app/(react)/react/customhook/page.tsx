@@ -7,7 +7,7 @@ import { useState } from 'react'
 const page = () => {
     let [Value, setValue] = useState('')
  
-    const [setItem, getItem] = useLocalStorage('value')
+    const [setItem, getItem, removeItem] = useLocalStorage('value')
 
 
 
@@ -22,7 +22,7 @@ const page = () => {
             <div className='flex flex-row gap-4 m-5'>
                 <button className='btn btn--primary  ' onClick={() => setItem(Value)}>Set</button>
                 <button className='btn  btn--primary' onClick={() => console.log(getItem())} >Get</button>
-                <button className='btn  btn--primary'>Remove</button>
+                <button className='btn  btn--primary' onClick={removeItem}>Remove</button>
                 
 
             </div>
