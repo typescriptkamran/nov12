@@ -48,7 +48,7 @@ export default function ReactLayout({ children }: { children: React.ReactNode })
         </div>
 
         {/* Desktop menu */}
-        <div className="flex md:w-1/6 py-5 px-5 text-left bg-slate-300 hidden md:flex">
+        <div className="md:w-1/6 py-5 px-5 text-left bg-slate-300 hidden md:flex">
           <ul className="flex flex-col md:flex-col space-y-2 md:space-y-0 md:space-x-4">
             <li>
               <Link href="/">Home</Link>
