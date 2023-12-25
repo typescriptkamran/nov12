@@ -1,4 +1,4 @@
-export const useLocalStorage = (A: string) => {
+export const UseLocalStorage = (A: string) => {
     const setItem = (value: unknown) => {
         try {
             window.localStorage.setItem(A, JSON.stringify(value))

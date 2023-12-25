@@ -1,5 +1,5 @@
 "use client"
-import { useLocalStorage } from '@/components/utilis/useLocalStorage'
+import { UseLocalStorage } from '@/components/utilis/useLocalStorage'
 import React from 'react'
 import { useState } from 'react'
 
@@ -8,7 +8,7 @@ import { useState } from 'react'
 const Page = () => {
     let [Value, setValue] = useState('')
  
-    const [setItem, getItem, removeItem] = useLocalStorage('value')
+    const [setItem, getItem, removeItem] =UseLocalStorage('value')
 
 
 
