@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 
-const page = () => {
+const Page = () => {
     let [Value, setValue] = useState('')
  
     const [setItem, getItem, removeItem] = useLocalStorage('value')
@@ -35,4 +35,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
